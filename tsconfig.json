@@ -16,6 +16,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
+    "paths": {
+      "@comps/*": ["./src/components/*"],
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

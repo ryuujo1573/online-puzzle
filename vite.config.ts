@@ -9,20 +9,18 @@ import router from 'vite-plugin-react-views';
 export default defineConfig({
   build: {
     rollupOptions: {
-      plugins: [
-        mdx(),
-      ]
+      plugins: []
     },
   },
   plugins: [
     react(),
-    {
-      ...mdx(),
-      enforce: 'pre',
-      apply: 'build',
-    },
+    mdx(),
     windiCSS(),
     router(),
-    // reactPages({ pagesDir: path.join(__dirname, 'pages') }),
   ],
+  resolve: {
+    alias: [
+      { find: '@comps', replacement: path.resolve(__dirname) + '/src/components' }
+    ]
+  }
 });
