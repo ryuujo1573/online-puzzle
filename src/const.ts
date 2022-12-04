@@ -1,0 +1,1 @@
+export const Languages = ['xml', 'bash', 'c', 'cpp', 'csharp', 'css', 'markdown', 'diff', 'ruby', 'go', 'graphql', 'ini', 'java', 'javascript', 'json', 'kotlin', 'less', 'lua', 'makefile', 'perl', 'objectivec', 'php', 'php-template', 'plaintext', 'python', 'python-repl', 'r', 'rust', 'scss', 'shell', 'sql', 'swift', 'yaml', 'typescript', 'vbnet', 'wasm'] as const

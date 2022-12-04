@@ -4,8 +4,8 @@ type Props = {
 };
 export function TopBar(props: Props) {
   return (
-    <div className='fixed top-0 left-0 right-0'>
-      <b>
+    <div className='flex items-center justify-center'>
+      <b className=''>
         Top Bar!
       </b>
     </div>
