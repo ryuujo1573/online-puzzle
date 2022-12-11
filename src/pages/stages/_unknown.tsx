@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-import hljs from 'highlight.js';
-import 'highlight.js/styles/dark.css';
-import { Outlet, useParams } from "react-router-dom";
+import React from "react";
+import { useParams } from "react-router-dom";
 
 export default function () {
   const param = useParams();
